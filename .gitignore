@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+.venv/
+venv*/
+back/venv*/
+**/.mypy_cache/
+**/.pytest_cache/
+
+# Node / Angular
+node_modules/
+**/node_modules/
+dist/
+build/
+.angular/
+coverage/
+
+# Audio / Models / Checkpoints (use LFS if needed)
+models/
+**/models/
+*.bin
+*.safetensors
+*.metallib
+*.dylib
+*.onnx
+*.pt
+*.pth
+*.mp3
+*.wav
+*.webm
+
+# IDE
+.vscode/
+.idea/

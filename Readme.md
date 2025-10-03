@@ -1,0 +1,1 @@
+This is an AI speech to text application that uses whisper-turbo LLM locally and with aphyton script and websocket talk directly with a front end in ANgular that translates what we speak directly to text live.
