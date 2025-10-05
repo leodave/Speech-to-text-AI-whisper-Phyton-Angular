@@ -1,0 +1,24 @@
+<div style="max-width:720px;margin:2rem auto;font-family:system-ui,Segoe UI,Roboto,Arial">
+    <h2>Live Whisper (Local) — Speech → Text</h2>
+  
+    <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:1rem">
+      <label>Language:</label>
+      <select [(ngModel)]="language">
+        <option [ngValue]="'en'">English (en)</option>
+        <option [ngValue]="'es'">Spanish (es)</option>
+        <option [ngValue]="undefined">Auto-detect</option>
+      </select>
+  
+      <button (click)="start()" [disabled]="recording">Start</button>
+      <button (click)="stop()" [disabled]="!recording">Stop</button>
+    </div>
+  
+    <div style="padding:1rem;border:1px solid #ddd;border-radius:8px;background:#fafafa">
+      <div><strong>Partial:</strong></div>
+      <div style="min-height:2.5rem;white-space:pre-wrap">{{ partialText }}</div>
+      <hr/>
+      <div><strong>Final:</strong></div>
+      <div style="min-height:2.5rem;white-space:pre-wrap">{{ finalText }}</div>
+    </div>
+  </div>
+  
